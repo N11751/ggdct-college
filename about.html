@@ -1,0 +1,567 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>About Us | G.G.D.C.T. College</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
+          rel="stylesheet">
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <style>
+        .page-banner {
+            min-height: 300px;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            color: white;
+            background:
+                linear-gradient(rgba(10,32,57,.85), rgba(10,32,57,.8)),
+                url("https://images.unsplash.com/photo-1562774053-701939374585?auto=format&fit=crop&w=1600&q=85")
+                center/cover;
+        }
+
+        .page-banner h1 {
+            font-size: clamp(34px, 5vw, 52px);
+            margin-bottom: 12px;
+        }
+
+        .page-banner p {
+            font-size: 14px;
+            color: #e4ebf5;
+        }
+
+        .page-banner a {
+            color: #f5dfac;
+        }
+
+        .about-layout {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 45px;
+            align-items: center;
+        }
+
+        .about-layout img {
+            height: 390px;
+            object-fit: cover;
+            border-radius: 16px;
+            box-shadow: 0 12px 35px rgba(16,44,78,.12);
+        }
+
+        .about-copy h2 {
+            color: #102c4e;
+            font-size: clamp(26px, 3vw, 36px);
+            line-height: 1.4;
+            margin-bottom: 18px;
+        }
+
+        .about-copy p {
+            color: #718096;
+            font-size: 13px;
+            margin-bottom: 15px;
+        }
+
+        .about-copy h2 span {
+            color: #b68a39;
+        }
+
+        .values-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 22px;
+            margin-top: 40px;
+        }
+
+        .value-card {
+            padding: 28px 22px;
+            border: 1px solid #e5eaf1;
+            border-radius: 14px;
+            background: white;
+            transition: .3s ease;
+        }
+
+        .value-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 35px rgba(16,44,78,.09);
+        }
+
+        .value-card i {
+            font-size: 27px;
+            color: #b68a39;
+            margin-bottom: 17px;
+        }
+
+        .value-card h3 {
+            color: #102c4e;
+            font-size: 17px;
+            margin-bottom: 10px;
+        }
+
+        .value-card p {
+            color: #718096;
+            font-size: 12px;
+        }
+
+        .principal-box {
+            display: grid;
+            grid-template-columns: 140px 1fr;
+            align-items: center;
+            gap: 28px;
+            background: #f6f8fc;
+            border: 1px solid #e5eaf1;
+            padding: 35px;
+            border-radius: 16px;
+        }
+
+        .principal-placeholder {
+            width: 130px;
+            height: 130px;
+            display: grid;
+            place-items: center;
+            border-radius: 50%;
+            background: #e9eff7;
+            color: #102c4e;
+            font-size: 48px;
+        }
+
+        .principal-box h2 {
+            color: #102c4e;
+            font-size: 25px;
+            margin-bottom: 12px;
+        }
+
+        .principal-box p {
+            color: #718096;
+            font-size: 13px;
+        }
+
+        .principal-box .principal-name {
+            color: #a77b2a;
+            font-weight: 700;
+            margin-top: 12px;
+        }
+
+        .facilities-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 22px;
+        }
+
+        .facility-card {
+            background: white;
+            padding: 28px 22px;
+            border: 1px solid #e5eaf1;
+            border-radius: 14px;
+        }
+
+        .facility-card i {
+            color: #b68a39;
+            font-size: 25px;
+            margin-bottom: 15px;
+        }
+
+        .facility-card h3 {
+            color: #102c4e;
+            font-size: 16px;
+            margin-bottom: 8px;
+        }
+
+        .facility-card p {
+            color: #718096;
+            font-size: 12px;
+        }
+
+        @media(max-width: 800px) {
+            .about-layout {
+                grid-template-columns: 1fr;
+            }
+
+            .values-grid,
+            .facilities-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .about-layout img {
+                height: 300px;
+            }
+        }
+
+        @media(max-width: 520px) {
+            .values-grid,
+            .facilities-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .principal-box {
+                grid-template-columns: 1fr;
+                padding: 25px;
+            }
+
+            .principal-placeholder {
+                width: 100px;
+                height: 100px;
+                font-size: 36px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Top Bar -->
+    <div class="topbar">
+        <div class="container topbar-content">
+            <p><i class="fas fa-graduation-cap"></i>
+                Welcome to G.G.D.C.T. College
+            </p>
+            <p><i class="fas fa-book-open"></i>
+                Intermediate Education | XI & XII
+            </p>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <header class="header">
+        <div class="container navbar">
+
+            <a href="index.html" class="logo">
+                <div class="logo-icon">
+                    <img src="image.png" alt="G.G.D.C.T. College Logo">
+                </div>
+
+                <div class="logo-text">
+                    <h2>G.G.D.C.T.</h2>
+                    <span>COLLEGE</span>
+                </div>
+            </a>
+
+            <input type="checkbox" id="menu-toggle">
+
+            <label for="menu-toggle" class="menu-icon">
+                <i class="fas fa-bars"></i>
+            </label>
+
+
+<nav class="main-nav">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="programs.html">Programs</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="syllabus.html">Syllabus</a>
+    <a href="results.html">Results</a>
+    <a href="admissions.html">Admissions</a>
+    <a href="faculty.html">Faculty</a>
+    <a href="events.html">Events</a>
+     <a href="silp.html">Silps</a>
+    <a href="announcements.html">Notices</a>
+    <a href="contact.html">Contact</a>
+</nav>
+
+
+        </div>
+    </header>
+
+    <!-- Page Banner -->
+    <section class="page-banner">
+        <div class="container">
+            <h1>About Our College</h1>
+
+            <p>
+                <a href="index.html">Home</a>
+                &nbsp; / &nbsp;
+                About Us
+            </p>
+        </div>
+    </section>
+
+    <!-- College Introduction -->
+    <section class="section-padding">
+        <div class="container about-layout">
+
+            <div>
+                <img
+                    src="https://images.unsplash.com/photo-1562774053-701939374585?auto=format&fit=crop&w=1000&q=85"
+                    alt="College campus">
+            </div>
+
+            <div class="about-copy">
+                <span class="section-label">WHO WE ARE</span>
+
+                <h2>
+                    Education That
+                    <span>Inspires Success</span>
+                </h2>
+
+                <p>
+                    Welcome to G.G.D.C.T. College. This website
+                    provides information about our college,
+                    intermediate academic programs and student
+                    learning resources.
+                </p>
+
+                <p>
+                    Our academic focus includes First Year
+                    (Class XI) and Second Year (Class XII),
+                    with Pre-Medical and Pre-Engineering programs.
+                </p>
+
+                <p>
+                    Students can explore the syllabus, educational
+                    videos, college activities and other academic
+                    information through this website.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Vision and Mission -->
+    <section class="section-padding" style="background:#f6f8fc;">
+        <div class="container">
+
+            <div class="section-heading">
+                <span class="section-label">OUR FOUNDATION</span>
+                <h2>Our Vision & Mission</h2>
+                <p>
+                    Encouraging learning, responsibility and
+                    academic development.
+                </p>
+            </div>
+
+            <div class="values-grid">
+
+                <div class="value-card">
+                    <i class="fas fa-eye"></i>
+                    <h3>Our Vision</h3>
+                    <p>
+                        To support students in becoming knowledgeable,
+                        confident and responsible individuals.
+                    </p>
+                </div>
+
+                <div class="value-card">
+                    <i class="fas fa-bullseye"></i>
+                    <h3>Our Mission</h3>
+                    <p>
+                        To encourage quality learning, scientific
+                        curiosity and academic achievement.
+                    </p>
+                </div>
+
+                <div class="value-card">
+                    <i class="fas fa-heart"></i>
+                    <h3>Our Values</h3>
+                    <p>
+                        To promote respect, honesty, discipline,
+                        teamwork and lifelong learning.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Principal Message -->
+    <section class="section-padding">
+        <div class="container">
+
+            <div class="section-heading">
+                <span class="section-label">LEADERSHIP</span>
+                <h2>Principal's Message</h2>
+            </div>
+
+            <div class="principal-box">
+                <div class="principal-placeholder">
+                    <i class="fas fa-user-tie"></i>
+                </div>
+                
+                <div>
+                    <h2>A Message to Our Students</h2>
+
+                    <p>
+                        Education is an important step towards
+                        personal growth and a brighter future.
+                        Students are encouraged to remain curious,
+                        work hard, respect others and make the most
+                        of their learning opportunities.
+                    </p>
+
+                    <p class="principal-name">
+                        Principal
+                    </p>
+                    <p>G.G.D.C.T. College</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Academic Programs -->
+    <section class="section-padding" style="background:#f6f8fc;">
+        <div class="container">
+
+            <div class="section-heading">
+                <span class="section-label">ACADEMICS</span>
+                <h2>Our Intermediate Programs</h2>
+                <p>
+                    Explore the academic groups offered at the college.
+                </p>
+            </div>
+
+            <div class="facilities-grid">
+
+                <div class="facility-card">
+                    <i class="fas fa-microscope"></i>
+                    <h3>Pre-Medical</h3>
+                    <p>
+                        Biology, Chemistry and Physics for
+                        students interested in medical and
+                        life-science fields.
+                    </p>
+                </div>
+
+                <div class="facility-card">
+                    <i class="fas fa-atom"></i>
+                    <h3>Pre-Engineering</h3>
+                    <p>
+                        Mathematics, Chemistry and Physics
+                        for students interested in engineering
+                        and technical fields.
+                    </p>
+                </div>
+
+                
+                <!-- Arts -->
+<div class="facility-card">
+    <i class="fas fa-palette"></i>
+    <h3>Arts</h3>
+    <p>
+        Explore arts subjects, creative learning
+        and academic opportunities.
+    </p>
+</div>
+
+<!-- Humanities FA -->
+<div class="facility-card">
+    <i class="fas fa-book-open"></i>
+    <h3>Humanities (FA)</h3>
+    <p>
+        Explore humanities subjects and develop
+        knowledge of society, culture and people.
+    </p>
+</div>
+
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Facilities -->
+    <section class="section-padding">
+        <div class="container">
+
+            <div class="section-heading">
+                <span class="section-label">STUDENT LEARNING</span>
+                <h2>Learning Opportunities</h2>
+                <p>
+                    Educational areas to explore and develop knowledge.
+                </p>
+            </div>
+
+            <div class="facilities-grid">
+
+                <div class="facility-card">
+                    <i class="fas fa-flask"></i>
+                    <h3>Science Learning</h3>
+                    <p>
+                        Explore scientific concepts and
+                        practical learning resources.
+                    </p>
+                </div>
+
+                <div class="facility-card">
+                    <i class="fas fa-book"></i>
+                    <h3>Study Resources</h3>
+                    <p>
+                        Find syllabus information, notes
+                        and educational material.
+                    </p>
+                </div>
+
+                <div class="facility-card">
+                    <i class="fas fa-photo-film"></i>
+                    <h3>College Activities</h3>
+                    <p>
+                        View photographs, events and
+                        educational videos in the website gallery.
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-grid">
+
+            <div class="footer-about">
+                <a href="index.html" class="logo footer-logo">
+                    <div class="logo-icon">
+                        <img src="image.png" alt="G.G.D.C.T. College Logo">
+                    </div>
+
+                    <div class="logo-text">
+                        <h2>G.G.D.C.T.</h2>
+                        <span>COLLEGE</span>
+                    </div>
+                </a>
+
+                <p>
+                    Inspiring students through knowledge,
+                    education and academic excellence.
+                </p>
+            </div>
+
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <a href="index.html">Home</a>
+                <a href="about.html">About College</a>
+                <a href="index.html#programs">Programs</a>
+                <a href="index.html#gallery">Gallery</a>
+            </div>
+
+            <div class="footer-links">
+                <h3>Student Resources</h3>
+                <a href="index.html#videos">Videos</a>
+                <a href="index.html#syllabus">Syllabus</a>
+                <a href="index.html#results">Results</a>
+                <a href="index.html#contact">Contact</a>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <p>
+                &copy; 2026 G.G.D.C.T. College.
+                All rights reserved.
+            </p>
+            
+            <a href="#" class="back-to-top" aria-label="Back to top">
+                <i class="fas fa-arrow-up"></i>
+            </a>
+        </div>
+    </footer>
+
+</body>
+</html>

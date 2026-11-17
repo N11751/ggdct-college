@@ -1,0 +1,770 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Digital Library | G.G.D.C.T. College</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- HEADER AND NAVIGATION -->
+
+    <header class="library-header">
+
+        <div class="library-logo">
+            <div class="logo-box">GG</div>
+
+            <div>
+                <h1>G.G.D.C.T.</h1>
+                <p>Digital Library</p>
+            </div>
+        </div>
+
+        <nav class="main-nav">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="programs.html">Programs</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="library.html" class="active">Library</a>
+            <a href="syllabus.html">Syllabus</a>
+            <a href="results.html">Results</a>
+            <a href="admissions.html">Admissions</a>
+            <a href="faculty.html">Faculty</a>
+            <a href="events.html">Events</a>
+            <a href="announcements.html">Notices</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+
+    </header>
+
+
+    <!-- HERO SECTION -->
+
+    <section class="library-hero">
+
+        <div class="library-hero-content">
+
+            <span class="library-badge">
+                G.G.D.C.T. DIGITAL LIBRARY
+            </span>
+
+            <h2>Explore. Read. Learn.</h2>
+
+            <p>
+                Discover academic books, textbooks and learning
+                resources for Intermediate students.
+            </p>
+
+            <a href="#books" class="library-btn">
+                Explore Books
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- SEARCH SECTION -->
+
+    <section class="library-search-section">
+
+        <div class="library-search">
+
+            <h2>Find Your Book</h2>
+
+            <p>
+                Search books by title, subject or study program.
+            </p>
+
+            <div class="library-book-search">
+
+                <input
+                    type="text"
+                    id="bookSearch"
+                    placeholder="Search Biology, English, Physics..."
+                    autocomplete="off"
+                >
+
+                <button type="button" id="searchButton">
+                    Search
+                </button>
+
+            </div>
+
+            <p id="searchResult" class="search-result"></p>
+
+        </div>
+
+    </section>
+
+
+    <!-- CATEGORIES SECTION -->
+
+    <section class="library-categories">
+
+        <div class="section-title">
+
+            <span>ACADEMIC COLLECTION</span>
+
+            <h2>Browse by Program</h2>
+
+            <p>
+                Explore educational resources according to your
+                academic subjects.
+            </p>
+
+        </div>
+
+        <div class="category-grid">
+
+            <div class="category-card">
+                <div class="category-icon">🧬</div>
+                <h3>Pre-Medical</h3>
+                <p>Biology, Chemistry and Physics.</p>
+            </div>
+
+            <div class="category-card">
+                <div class="category-icon">⚙️</div>
+                <h3>Pre-Engineering</h3>
+                <p>Mathematics, Physics and Chemistry.</p>
+            </div>
+
+            <div class="category-card">
+                <div class="category-icon">🎨</div>
+                <h3>Arts</h3>
+                <p>Arts, literature and creative subjects.</p>
+            </div>
+
+            <div class="category-card">
+                <div class="category-icon">📚</div>
+                <h3>Humanities / FA</h3>
+                <p>Humanities and social sciences.</p>
+            </div>
+
+            <div class="category-card">
+                <div class="category-icon">📖</div>
+                <h3>English</h3>
+                <p>English language and literature.</p>
+            </div>
+
+            <div class="category-card">
+                <div class="category-icon">🌍</div>
+                <h3>General Knowledge</h3>
+                <p>Reference and general reading resources.</p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- BOOK COLLECTION -->
+
+    <section class="books-section" id="books">
+
+        <div class="section-title">
+
+            <span>G.G.D.C.T. BOOK COLLECTION</span>
+
+            <h2>Explore Academic Books</h2>
+
+            <p>
+                Read books online or download available PDF files.
+            </p>
+
+        </div>
+
+
+        <div class="pdf-book-grid" id="bookGrid">
+
+
+            <!-- BIOLOGY -->
+
+            <div class="pdf-book-card"
+                 data-search="biology pre medical science class 11 class 12">
+
+                <div class="pdf-book-cover biology">
+
+                    <span>PRE-MEDICAL</span>
+                    <div class="pdf-icon">🧬</div>
+                    <h3>Biology</h3>
+                    <p>Intermediate Level</p>
+
+                </div>
+
+                <div class="pdf-book-info">
+
+                    <span>PRE-MEDICAL</span>
+
+                    <h3>Biology Textbook</h3>
+
+                    <p>
+                        Biology learning resource for Intermediate students.
+                    </p>
+
+                    <div class="pdf-buttons">
+
+                        <a href="books/biology.pdf"
+                           target="_blank"
+                           rel="noopener"
+                           class="read-btn">
+                            Read Book
+                        </a>
+
+                        <a href="books/biology.pdf"
+                           download
+                           class="download-btn">
+                            Download PDF
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- CHEMISTRY -->
+
+            <div class="pdf-book-card"
+                 data-search="chemistry pre medical pre engineering science class 11 class 12">
+
+                <div class="pdf-book-cover chemistry">
+
+                    <span>SCIENCE</span>
+                    <div class="pdf-icon">⚗️</div>
+                    <h3>Chemistry</h3>
+                    <p>Intermediate Level</p>
+
+                </div>
+
+                <div class="pdf-book-info">
+
+                    <span>PRE-MEDICAL / PRE-ENGINEERING</span>
+
+                    <h3>Chemistry Textbook</h3>
+
+                    <p>
+                        Chemistry learning resources and academic material.
+                    </p>
+
+                    <div class="pdf-buttons">
+
+                        <a href="books/chemistry.pdf"
+                           target="_blank"
+                           rel="noopener"
+                           class="read-btn">
+                            Read Book
+                        </a>
+
+                        <a href="books/chemistry.pdf"
+                           download
+                           class="download-btn">
+                            Download PDF
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- PHYSICS -->
+
+            <div class="pdf-book-card"
+                 data-search="physics pre medical pre engineering science class 11 class 12">
+
+                <div class="pdf-book-cover physics">
+
+                    <span>SCIENCE</span>
+                    <div class="pdf-icon">⚡</div>
+                    <h3>Physics</h3>
+                    <p>Intermediate Level</p>
+
+                </div>
+
+                <div class="pdf-book-info">
+
+                    <span>PRE-MEDICAL / PRE-ENGINEERING</span>
+
+                    <h3>Physics Textbook</h3>
+
+                    <p>
+                        Physics concepts, laws and academic resources.
+                    </p>
+
+                    <div class="pdf-buttons">
+
+                        <a href="books/physics.pdf"
+                           target="_blank"
+                           rel="noopener"
+                           class="read-btn">
+                            Read Book
+                        </a>
+
+                        <a href="books/physics.pdf"
+                           download
+                           class="download-btn">
+                            Download PDF
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- MATHEMATICS -->
+
+            <div class="pdf-book-card"
+                 data-search="mathematics math pre engineering class 11 class 12">
+
+                <div class="pdf-book-cover mathematics">
+
+                    <span>PRE-ENGINEERING</span>
+                    <div class="pdf-icon">∑</div>
+                    <h3>Mathematics</h3>
+                    <p>Intermediate Level</p>
+
+                </div>
+
+                <div class="pdf-book-info">
+
+                    <span>PRE-ENGINEERING</span>
+
+                    <h3>Mathematics Textbook</h3>
+
+                    <p>
+                        Mathematics concepts and practice resources.
+                    </p>
+
+                    <div class="pdf-buttons">
+
+                        <a href="books/mathematics.pdf"
+                           target="_blank"
+                           rel="noopener"
+                           class="read-btn">
+                            Read Book
+                        </a>
+
+                        <a href="books/mathematics.pdf"
+                           download
+                           class="download-btn">
+                            Download PDF
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- ENGLISH -->
+
+            <div class="pdf-book-card"
+                 data-search="english grammar literature language communication">
+
+                <div class="pdf-book-cover english">
+
+                    <span>LANGUAGE</span>
+                    <div class="pdf-icon">📖</div>
+                    <h3>English</h3>
+                    <p>Language & Literature</p>
+
+                </div>
+
+                <div class="pdf-book-info">
+
+                    <span>ENGLISH</span>
+
+                    <h3>English Textbook</h3>
+
+                    <p>
+                        English grammar, language and literature resources.
+                    </p>
+
+                    <div class="pdf-buttons">
+
+                        <a href="books/english.pdf"
+                           target="_blank"
+                           rel="noopener"
+                           class="read-btn">
+                            Read Book
+                        </a>
+
+                        <a href="books/english.pdf"
+                           download
+                           class="download-btn">
+                            Download PDF
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- ARTS -->
+
+            <div class="pdf-book-card"
+                 data-search="arts literature history culture creative">
+
+                <div class="pdf-book-cover arts">
+
+                    <span>ARTS</span>
+                    <div class="pdf-icon">🎨</div>
+                    <h3>Arts</h3>
+                    <p>Intermediate Level</p>
+
+                </div>
+
+                <div class="pdf-book-info">
+
+                    <span>ARTS</span>
+
+                    <h3>Arts Study Resource</h3>
+
+                    <p>
+                        Reading resources for Arts and related subjects.
+                    </p>
+
+                    <div class="pdf-buttons">
+
+                        <a href="books/arts.pdf"
+                           target="_blank"
+                           rel="noopener"
+                           class="read-btn">
+                            Read Book
+                        </a>
+
+                        <a href="books/arts.pdf"
+                           download
+                           class="download-btn">
+                            Download PDF
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- HUMANITIES -->
+
+            <div class="pdf-book-card"
+                 data-search="humanities fa social science history">
+
+                <div class="pdf-book-cover humanities">
+
+                    <span>HUMANITIES / FA</span>
+                    <div class="pdf-icon">🏛️</div>
+                    <h3>Humanities</h3>
+                    <p>Intermediate Level</p>
+
+                </div>
+
+                <div class="pdf-book-info">
+
+                    <span>HUMANITIES / FA</span>
+
+                    <h3>Humanities Study Resource</h3>
+
+                    <p>
+                        Humanities and social science reading material.
+                    </p>
+
+                    <div class="pdf-buttons">
+
+                        <a href="books/humanities.pdf"
+                           target="_blank"
+                           rel="noopener"
+                           class="read-btn">
+                            Read Book
+                        </a>
+
+                        <a href="books/humanities.pdf"
+                           download
+                           class="download-btn">
+                            Download PDF
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- GENERAL KNOWLEDGE -->
+
+            <div class="pdf-book-card"
+                 data-search="general knowledge reference world information">
+
+                <div class="pdf-book-cover general">
+
+                    <span>REFERENCE</span>
+                    <div class="pdf-icon">🌍</div>
+                    <h3>General Knowledge</h3>
+                    <p>Reference Collection</p>
+
+                </div>
+
+                <div class="pdf-book-info">
+
+                    <span>GENERAL KNOWLEDGE</span>
+
+                    <h3>General Knowledge Resource</h3>
+
+                    <p>
+                        General reading and reference resources.
+                    </p>
+
+                    <div class="pdf-buttons">
+
+                        <a href="books/general-knowledge.pdf"
+                           target="_blank"
+                           rel="noopener"
+                           class="read-btn">
+                            Read Book
+                        </a>
+
+                        <a href="books/general-knowledge.pdf"
+                           download
+                           class="download-btn">
+                            Download PDF
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+
+        <!-- NO SEARCH RESULT -->
+
+        <div id="noBookFound" class="no-book-found">
+
+            <h3>No Book Found</h3>
+
+            <p>
+                Please try another book name or subject.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- LIBRARY FEATURES -->
+
+    <section class="library-features">
+
+        <div class="section-title">
+
+            <span>OUR LIBRARY</span>
+
+            <h2>Learning Beyond the Classroom</h2>
+
+        </div>
+
+        <div class="features-grid">
+
+            <div class="library-feature">
+
+                <div class="feature-number">01</div>
+
+                <h3>Academic Resources</h3>
+
+                <p>
+                    Organized learning resources for different
+                    academic programs.
+                </p>
+
+            </div>
+
+            <div class="library-feature">
+
+                <div class="feature-number">02</div>
+
+                <h3>Easy Access</h3>
+
+                <p>
+                    Find and access available study material easily.
+                </p>
+
+            </div>
+
+            <div class="library-feature">
+
+                <div class="feature-number">03</div>
+
+                <h3>Reading Culture</h3>
+
+                <p>
+                    Encouraging students to develop reading habits.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- LIBRARY MESSAGE -->
+
+    <section class="library-notice">
+
+        <div>
+
+            <span>G.G.D.C.T. COLLEGE</span>
+
+            <h2>Knowledge Opens New Doors</h2>
+
+            <p>
+                Our digital library provides an organized space
+                for educational resources, academic reading
+                and independent learning.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <div class="footer-content">
+
+            <h3>G.G.D.C.T. College</h3>
+
+            <p>
+                Empowering Students Through Knowledge,
+                Creativity & Excellence.
+            </p>
+
+        </div>
+
+        <div class="footer-bottom">
+
+            <p>
+                &copy; 2026 G.G.D.C.T. College. All Rights Reserved.
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <!-- SEARCH JAVASCRIPT -->
+
+    <script>
+
+        const searchInput =
+            document.getElementById("bookSearch");
+
+        const searchButton =
+            document.getElementById("searchButton");
+
+        const bookCards =
+            document.querySelectorAll(".pdf-book-card");
+
+        const noBookFound =
+            document.getElementById("noBookFound");
+
+        const searchResult =
+            document.getElementById("searchResult");
+
+
+        function searchBooks() {
+
+            const searchText =
+                searchInput.value.toLowerCase().trim();
+
+            let foundBooks = 0;
+
+            bookCards.forEach(function(book) {
+
+                const keywords =
+                    book.getAttribute("data-search").toLowerCase();
+
+                const bookName =
+                    book.innerText.toLowerCase();
+
+                const match =
+                    keywords.includes(searchText) ||
+                    bookName.includes(searchText);
+
+                if (match) {
+
+                    book.style.display = "";
+
+                    foundBooks++;
+
+                } else {
+
+                    book.style.display = "none";
+
+                }
+
+            });
+
+
+            if (searchText === "") {
+
+                searchResult.textContent = "";
+
+            } else {
+
+                searchResult.textContent =
+                    foundBooks + " book(s) found";
+
+            }
+
+
+            if (foundBooks === 0) {
+
+                noBookFound.style.display = "block";
+
+            } else {
+
+                noBookFound.style.display = "none";
+
+            }
+
+        }
+
+
+        searchInput.addEventListener(
+            "input",
+            searchBooks
+        );
+
+        searchButton.addEventListener(
+            "click",
+            searchBooks
+        );
+
+
+    </script>
+
+</body>
+</html>
+```
